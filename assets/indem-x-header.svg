@@ -5,20 +5,20 @@
   <rect width="1500" height="500" fill="#ffd44d" />
   <image
     href="fleet-yard-hero.jpg"
-    x="650"
+    x="0"
     y="0"
     width="850"
     height="500"
     preserveAspectRatio="xMidYMid slice"
   />
-  <rect x="642" width="8" height="500" fill="#0d100e" />
+  <rect x="850" width="8" height="500" fill="#0d100e" />
 
   <path
-    d="M80 62h70v20h-24v64h24v20H80v-20h24V82H80z"
+    d="M930 62h70v20h-24v64h24v20h-70v-20h24V82h-24z"
     fill="#0d100e"
   />
   <text
-    x="180"
+    x="1030"
     y="145"
     fill="#0d100e"
     font-family="Arial, Helvetica, sans-serif"
@@ -27,7 +27,7 @@
   >Indem</text>
 
   <text
-    x="80"
+    x="930"
     y="245"
     fill="#0d100e"
     font-family="Arial, Helvetica, sans-serif"
@@ -35,7 +35,7 @@
     font-weight="700"
   >Insurance for independent</text>
   <text
-    x="80"
+    x="930"
     y="294"
     fill="#0d100e"
     font-family="Arial, Helvetica, sans-serif"
@@ -43,9 +43,9 @@
     font-weight="700"
   >vehicle-rental businesses.</text>
 
-  <line x1="80" y1="337" x2="176" y2="337" stroke="#0d100e" stroke-width="5" />
+  <line x1="930" y1="337" x2="1026" y2="337" stroke="#0d100e" stroke-width="5" />
   <text
-    x="80"
+    x="930"
     y="382"
     fill="#0d100e"
     font-family="Arial, Helvetica, sans-serif"
