@@ -13,12 +13,8 @@
   />
   <rect x="850" width="8" height="500" fill="#0d100e" />
 
-  <path
-    d="M930 62h70v20h-24v64h24v20h-70v-20h24V82h-24z"
-    fill="#0d100e"
-  />
   <text
-    x="1030"
+    x="930"
     y="145"
     fill="#0d100e"
     font-family="Arial, Helvetica, sans-serif"
