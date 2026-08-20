@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
   <title id="title">Indem profile mark</title>
-  <desc id="desc">A black capital I centered inside a yellow square on a near-black background.</desc>
-  <rect width="1024" height="1024" fill="#111111"/>
-  <rect x="235" y="235" width="554" height="554" fill="#FFD84D"/>
-  <rect x="471" y="330" width="82" height="364" fill="#111111"/>
+  <desc id="desc">A black capital I centered on a yellow square.</desc>
+  <rect width="1024" height="1024" fill="#FFD84D"/>
+  <rect x="436" y="176" width="152" height="672" fill="#111111"/>
 </svg>
