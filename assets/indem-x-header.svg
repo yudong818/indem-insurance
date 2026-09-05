@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" role="img" aria-labelledby="title description">
   <title id="title">Indem X account header</title>
-  <desc id="description">Indem insurance for independent rental fleets, including operators moving from Turo to private rentals.</desc>
+  <desc id="description">Indem insurance for independent rental fleets, including operators moving from rental platforms to direct rentals.</desc>
 
   <rect width="1500" height="500" fill="#ffd44d" />
   <image
@@ -47,5 +47,5 @@
     font-family="Arial, Helvetica, sans-serif"
     font-size="22"
     font-weight="700"
-  >Moving from Turo to private rentals? Start here.</text>
+  >Moving beyond rental platforms? Start here.</text>
 </svg>
