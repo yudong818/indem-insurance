@@ -2,4 +2,4 @@
 :HL["/_next/static/chunks/13blm2~k5.~vs.css","style"]
 :HL["/assets/fleet-yard-hero.jpg","image",{"fetchPriority":"high"}]
 :HL["/assets/truck-fleet-inspection.jpg","image",{"fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"pilot","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"muLpYqPPdIzSAV4-Xe_Tt"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"pilot","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Dj-D1CisRG3FwRSLGG1zM"}
