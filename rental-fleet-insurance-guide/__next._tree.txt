@@ -1,4 +1,4 @@
 :HL["/_next/static/chunks/0r072n3v9aimt.css","style"]
 :HL["/_next/static/chunks/0_4xnrkl8h3zh.css","style"]
 :HL["/assets/rental-fleet-hero-v2.jpg","image",{"fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"rental-fleet-insurance-guide","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"FQYJ1h2kjv14dbXu4R1jh"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"rental-fleet-insurance-guide","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"mGJ6r_aTpxyywOSoLhtYK"}
