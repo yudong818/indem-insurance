@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/0~0oo~6hn5xqo.css","style"]
+:HL["/_next/static/chunks/13f7cel_5n921.css","style"]
 :HL["/_next/static/chunks/13blm2~k5.~vs.css","style"]
 :HL["/assets/fleet-yard-hero.jpg","image",{"fetchPriority":"high"}]
 :HL["/assets/truck-fleet-inspection.jpg","image",{"fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"pilot","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"ogzsnfNET65nsN6KQ3MC9"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"pilot","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"IvdSt6ws8my88T88x3xwF"}
