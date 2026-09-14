@@ -1,4 +1,4 @@
 :HL["/_next/static/chunks/0~0oo~6hn5xqo.css","style"]
 :HL["/_next/static/chunks/13blm2~k5.~vs.css","style"]
 :HL["/assets/rental-fleet-hero-v2.jpg","image",{"fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"2GxSeRCytqmThh5m2_qrF"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"ogzsnfNET65nsN6KQ3MC9"}
