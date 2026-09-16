@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/15w__clfao5iy.css","style"]
+:HL["/_next/static/chunks/0._qx8uggkcyx.css","style"]
 :HL["/_next/static/chunks/13blm2~k5.~vs.css","style"]
-:HL["/assets/fleet-yard-hero.jpg","image",{"fetchPriority":"high"}]
-:HL["/assets/truck-fleet-inspection.jpg","image",{"fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"pilot","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"CTAhWhXFAp0h2uUCpGj4w"}
+:HL["/assets/editorial/rental-hero.webp","image",{"fetchPriority":"high"}]
+:HL["/assets/editorial/trucks-hero.webp","image",{"fetchPriority":"high"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"pilot","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"c-62nGi3rctx8PjFyjvwW"}
