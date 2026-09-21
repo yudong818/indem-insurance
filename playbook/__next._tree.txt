@@ -1,4 +1,4 @@
 :HL["/_next/static/chunks/0h.~7k-cuw.ta.css","style"]
 :HL["/_next/static/chunks/0dg0n767i9a-8.css","style"]
 :HL["/assets/editorial/rental-hero.webp","image",{"fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"playbook","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"flCBKfCOfUxZlI0Ds6J8l"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"playbook","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"3JbVxcrdyCRDDH31TlAu5"}
