@@ -1,0 +1,6 @@
+:HL["/_next/static/chunks/0h.~7k-cuw.ta.css","style"]
+:HL["/_next/static/media/crimson_text_latin_400-s.p.14omomnk2beo_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/crimson_text_latin_400_italic-s.p.0vkirjbsp40gf.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/inter_latin_variable-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/0~c4vf5k0hbbj.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"physical-ai","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"2GV7yocKyS_AfY6LUtHQ2"}
