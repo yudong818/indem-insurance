@@ -12,9 +12,10 @@
     });
   }
   async function start() {
-    for (const file of ['assets/lenis.min.js', 'review.js', 'heading-accents.js', 'motion.js']) {
-      await load(`/homepage/${file}`);
+    for (const file of ['assets/lenis.min.js', 'review.js', 'heading-accents.js', 'motion.js', 'product-motion.js', 'narrative-scroll.js', 'paperwork-motion.js']) {
+      await load(`/homepage/${file}?v=20260928-v4`);
     }
+    document.querySelector('.homepage-shell').dataset.ready = 'true';
   }
   start().catch(() => {
     document.documentElement.classList.remove('motion-enabled');

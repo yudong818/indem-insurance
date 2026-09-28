@@ -1,0 +1,75 @@
+/* Only the trucking and continuity product chapters. */
+.content-preserved .product-scroll-section{padding:0;position:relative;--scene-p:0}
+.content-preserved .product-pin{background:var(--brand-black,#111)}
+.content-preserved .fleet-composition{display:grid;grid-template-columns:1.4fr 1fr;column-gap:clamp(40px,5vw,80px);row-gap:32px;padding-block:clamp(52px,7svh,82px);align-items:start}
+.content-preserved .narrative-heading{display:block;margin:0;max-width:none}
+.content-preserved .narrative-heading>.section-index{margin:0 0 20px}
+.content-preserved .narrative-heading h2{font-size:56px;max-width:720px;margin:0;line-height:1.16}
+.content-preserved .product-narrative{align-self:end;margin:0;max-width:410px;font-family:var(--font);text-wrap:pretty}
+.content-preserved .narrative-intro{display:block;color:#ffffffad;font-size:17px;font-weight:400;line-height:1.5;letter-spacing:0;margin-bottom:14px}
+.content-preserved .record-items,.content-preserved .continuity-changes{display:block;font-size:27px;font-weight:550;letter-spacing:0;line-height:1.4}
+.content-preserved [data-product-scene] [data-record]{display:block;color:#ffffffb8;transition:color .25s ease}
+.content-preserved [data-product-scene] [data-record].is-current{color:var(--brand-yellow,#ffd84f)}
+.content-preserved .narrative-conclusion{display:block;font-size:18px;line-height:1.55;font-weight:400;letter-spacing:0;color:#ffffffa8;margin-top:24px}
+.content-preserved .narrative-conclusion strong{color:#fff;font-weight:550}
+.content-preserved .fleet-film-figure,.content-preserved .broker-detail-figure{margin:0;min-width:0;position:relative}
+.fleet-film-window{position:relative;isolation:isolate;height:clamp(270px,38svh,400px);border-radius:8px 8px 70px 8px;overflow:hidden;background:#171717}
+.fleet-film-window>img,.product-scroll-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:48% center;pointer-events:none}
+.product-scroll-film{opacity:0;transition:opacity .22s linear}
+.product-scroll-film.is-ready{opacity:1}
+.content-preserved .broker-detail-figure{width:83%;align-self:center;justify-self:end}
+.broker-detail-figure .editorial-image{height:clamp(165px,23svh,250px);border-radius:52px 8px 8px 8px}
+.content-preserved .broker-detail-figure img{object-position:51% 52%;transform:translateY(calc((var(--scene-p) - .5)*-10px)) scale(1.04)}
+.content-preserved .fleet-film-figure figcaption,.content-preserved .broker-detail-figure figcaption{padding:14px 0 0;font-family:var(--font);font-size:13px;font-weight:450;line-height:1.5;color:#ffffffb8;background:none}
+.content-preserved .inspection-composition{padding-block:clamp(52px,7svh,82px);min-height:0;grid-template-columns:1fr 1.12fr;gap:clamp(48px,6vw,94px);align-items:center}
+.content-preserved .inspection-composition .claims-copy{padding:0;min-width:0}
+.content-preserved .inspection-composition .claims-copy h2{font-size:56px;line-height:1.16;margin:18px 0 28px}
+.content-preserved .inspection-composition .continuity-narrative{margin:0;font-size:inherit;max-width:470px}
+.content-preserved .inspection-composition .narrative-conclusion{margin-top:22px}
+.content-preserved .inspection-composition .claims-points{margin-top:26px;display:grid;gap:12px}
+.content-preserved .inspection-composition .claims-points>div{padding:0;min-height:0;gap:13px;font-size:15px;line-height:1.55;transition:opacity .25s ease,transform .25s ease}
+.content-preserved .inspection-composition .claims-points>div:not(.is-current){opacity:.8}
+.content-preserved .inspection-composition .claims-points>div.is-current{opacity:1;transform:translateX(4px)}
+.content-preserved .inspection-composition .claims-image-wrap{align-self:center;min-width:0;min-height:0}
+.content-preserved .inspection-window{position:relative;height:clamp(420px,64svh,640px);aspect-ratio:auto;border-radius:76px 8px 8px 8px;overflow:hidden}
+.content-preserved .inspection-window>img{transform:none!important;object-position:59% center}
+.inspection-loupe{position:absolute;left:54%;top:42%;width:clamp(150px,16vw,235px);aspect-ratio:1;border-radius:50%;overflow:hidden;opacity:0;transform:translate(-50%,-50%) scale(.8);border:1px solid #ffffff70;box-shadow:0 12px 38px #0008,inset 0 0 0 5px #ffffff0a;pointer-events:none;isolation:isolate}
+.content-preserved .inspection-loupe img{position:absolute;left:-164%!important;top:-97%!important;width:370%!important;height:auto!important;max-width:none;aspect-ratio:1.5;object-fit:fill;transform:none!important;border-radius:0!important}
+.inspection-loupe:after{content:'';position:absolute;inset:0;border-radius:inherit;border:5px solid #ffffff0a;box-shadow:inset 0 0 25px #0002;pointer-events:none}
+.product-scroll-ready .product-pin{position:sticky;top:0}
+.product-scroll-ready[data-product-scene="inspection"]{height:190svh}
+html:not(.motion-enabled) .product-scroll-section [data-record]{color:#ffffffd9}
+html:not(.motion-enabled) .product-scroll-section .claims-points>div{opacity:1;transform:none}
+@media(min-width:1001px) and (min-height:680px){
+ .content-preserved .fleet-composition,.content-preserved .product-scroll-ready .inspection-composition{min-height:100svh;box-sizing:border-box;align-content:center}
+}
+@media(max-width:1000px){
+ .content-preserved .fleet-composition{column-gap:34px;row-gap:28px}
+ .content-preserved .product-narrative{align-self:center}
+ .content-preserved .narrative-heading h2,.content-preserved .inspection-composition .claims-copy h2{font-size:40px}
+ .content-preserved .record-items,.content-preserved .continuity-changes{font-size:22px}
+ .content-preserved .narrative-conclusion{font-size:17px;margin-top:19px}
+ .content-preserved .inspection-composition{gap:38px}
+}
+@media(max-width:700px){
+ .content-preserved .fleet-composition{grid-template-columns:1fr;gap:28px;padding-block:68px}
+ .content-preserved .narrative-heading h2,.content-preserved .inspection-composition .claims-copy h2{font-size:36px}
+ .content-preserved .product-narrative{grid-row:3;max-width:none}
+ .content-preserved .fleet-film-figure{grid-row:2}
+ .fleet-film-window{height:auto;aspect-ratio:1.24;border-radius:6px 6px 48px 6px}
+ .content-preserved .broker-detail-figure{width:84%;margin-top:8px}
+ .broker-detail-figure .editorial-image{height:auto;aspect-ratio:1.55;border-radius:42px 6px 6px 6px}
+ .content-preserved .inspection-composition{display:flex;flex-direction:column;gap:32px;padding-block:68px}
+ .content-preserved .inspection-composition .claims-copy{order:0;width:100%}
+ .content-preserved .inspection-composition .claims-image-wrap{order:1;width:100%}
+ .content-preserved .inspection-window{height:auto;aspect-ratio:1.1;border-radius:48px 6px 6px 6px}
+ .inspection-loupe{width:42%}
+ .content-preserved .narrative-intro{font-size:17px}
+ .content-preserved .record-items,.content-preserved .continuity-changes{font-size:23px}
+ .content-preserved .inspection-composition .claims-points>div{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){
+ .product-scroll-section [data-record],.product-scroll-section .claims-points>div{transition:none}
+ .content-preserved .broker-detail-figure img{transform:none}
+ .inspection-loupe,.product-scroll-film{display:none}
+}

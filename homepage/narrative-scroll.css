@@ -1,0 +1,17 @@
+/* The two requested narratives share a reading highlight, without scroll pinning. */
+.content-preserved #workflow .workflow-narrative{font-family:var(--font);margin:0;max-width:450px;text-wrap:pretty}
+.content-preserved #workflow .workflow-narrative>.narrative-intro{position:relative;font-size:28px;font-weight:600;line-height:1.2;letter-spacing:0;color:#fff;margin-bottom:16px}
+.content-preserved #workflow .workflow-narrative>.narrative-intro::before{content:'';position:absolute;left:-.55em;top:.6em;transform:translateY(-50%);width:.18em;height:.18em;border-radius:50%;background:var(--brand-yellow,#ffd84f)}
+.content-preserved #workflow .narrative-accent{display:inline-block;vertical-align:baseline;font-family:var(--font-accent,'Yellowtail',cursive);font-size:1.17em;font-weight:400;font-style:normal;font-synthesis:none;letter-spacing:0;line-height:.98;color:var(--brand-yellow,#ffd84f);white-space:nowrap;padding-inline:.08em .14em;margin-inline:.03em .06em}
+.content-preserved .workflow-narrative .narrative-emphasis{display:block;font-size:27px;font-weight:550;line-height:1.4;letter-spacing:0}
+.content-preserved .workflow-narrative .narrative-bridge{margin-top:24px}
+.content-preserved [data-scroll-narrative] [data-narrative-step]{display:block;color:#ffffffb8;transition:color .2s ease}
+.content-preserved [data-scroll-narrative] [data-narrative-step].is-reading{color:var(--brand-yellow,#ffd84f)}
+.content-preserved #coverage .coverage-narrative [data-narrative-step]{display:inline}
+@media(max-width:1000px){.content-preserved .workflow-narrative .narrative-emphasis{font-size:22px}}
+@media(max-width:700px){
+ .content-preserved #workflow .workflow-narrative{margin-top:25px;max-width:none}
+ .content-preserved #workflow .workflow-narrative>.narrative-intro{font-size:22px}
+ .content-preserved .workflow-narrative .narrative-emphasis{font-size:23px}
+}
+@media(prefers-reduced-motion:reduce){.content-preserved [data-scroll-narrative] [data-narrative-step]{transition:none}}
