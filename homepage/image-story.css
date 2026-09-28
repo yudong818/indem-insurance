@@ -1,0 +1,46 @@
+/* The established black/gold palette is unchanged. Original copy now introduces and resolves the scroll scene. */
+.hero-fleet-controls{width:144px;max-width:144px;padding-bottom:44px!important}
+.hero-fleet-image{filter:brightness(1.06) saturate(.72)}
+.hero-fleet-image[data-scene="0"]{object-position:65% 54%}
+.hero-fleet-image[data-scene="1"]{object-position:62% 52%}
+.cinema-photo{filter:brightness(1.02) saturate(.76);object-position:center 56%;transform-origin:48% 58%}
+.cinema-shade{background:linear-gradient(0deg,#111111e8 0%,#11111191 32%,#11111110 66%,#11111108 100%)}
+.cinema-intro.shell{top:9%;right:0;left:0;text-align:left;grid-template-columns:1.6fr 1fr;align-items:end;gap:90px}
+.motion-enabled .cinema-intro{display:grid}
+.cinema-intro .hero-fleet-ambition{font-family:var(--serif);font-size:clamp(40px,4.2vw,62px);font-weight:400;line-height:1.08;letter-spacing:-1.1px;color:#d7c184;margin:0;max-width:620px;text-wrap:balance}
+.cinema-intro .hero-fleet-promise{font-family:var(--font);font-size:16px;line-height:1.7;letter-spacing:0;color:#bdbcb7;max-width:340px;margin:0 0 4px;justify-self:end}
+.cinema-caption{bottom:145px}
+.cinema-caption .continuum-section .page-shell{width:100%;margin:0}
+.cinema-caption .continuum-label{font-size:clamp(42px,4.7vw,68px);max-width:930px;margin-bottom:34px;text-wrap:balance}
+.cinema-caption .continuum ol{gap:clamp(22px,3.3vw,50px);overflow:visible}
+.cinema-caption .continuum li{position:relative;padding-bottom:15px;font-size:14px;opacity:calc(.55 + var(--phase,1)*.45);transform:translateY(calc((1 - var(--phase,1))*9px))}
+.cinema-caption .continuum li:after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:#cdbb77;opacity:.7;transform:scaleX(var(--phase,1));transform-origin:left}
+.motion-enabled .cinema-story{height:265svh}
+.cinema-hud{gap:36px}.cinema-progress{max-width:240px}
+.problem-evidence-image img,.trucking-gallery img,.claims-image-wrap img{filter:brightness(1.03) saturate(.72)}
+.problem-evidence-image img{object-position:center 50%}
+.trucking-gallery figure:first-child img{object-position:center 48%}
+.trucking-gallery figure:nth-child(2) img{object-position:center 57%}
+.claims-image-wrap img{object-position:62% center}
+.claims-image-wrap{height:auto;align-self:start;margin:0}
+.claims-image-wrap img{display:block;width:100%;height:auto;aspect-ratio:1.2}
+.claims-image-wrap figcaption{inset:auto;width:100%;margin:0}
+html:not(.motion-enabled) .cinema-stage{min-height:860px}
+html:not(.motion-enabled) .cinema-intro{display:grid}
+html:not(.motion-enabled) .cinema-caption{opacity:1}
+@media(max-width:800px){
+  .hero-fleet-controls{left:auto;right:22px;bottom:30px;width:130px;max-width:130px;padding-bottom:44px!important}
+  .hero-fleet-image[data-scene="0"]{object-position:66% center}
+  .hero-fleet-image[data-scene="1"]{object-position:70% center}
+  .cinema-intro.shell{top:7%;grid-template-columns:1fr;gap:20px}
+  .cinema-intro .hero-fleet-ambition{font-size:40px;max-width:325px;letter-spacing:-.65px}
+  .cinema-intro .hero-fleet-promise{font-size:14px;max-width:285px;justify-self:start}
+  .cinema-caption .continuum-label{font-size:42px;max-width:500px}
+  .cinema-caption .continuum ol{gap:20px 24px}
+  .cinema-caption .continuum li{font-size:13px;padding-bottom:11px}
+  .cinema-caption{bottom:150px}
+  .motion-enabled .cinema-story{height:240svh}
+  .cinema-photo{object-position:44% center}
+}
+@media(max-width:420px){.cinema-intro .hero-fleet-ambition{font-size:36px}.cinema-caption .continuum-label{font-size:37px}.cinema-caption .continuum ol{gap:18px 20px}}
+@media(prefers-reduced-motion:reduce){.cinema-caption .continuum li{opacity:1;transform:none}}

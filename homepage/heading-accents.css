@@ -1,0 +1,19 @@
+/* Live text, with a locally bundled connected script for each large title's key idea. */
+:root{--font-accent:'Yellowtail',cursive}
+.content-preserved .heading-accent{--accent-gap:.11em;--script-overhang:0px;display:inline-block;position:relative;vertical-align:baseline;font-family:var(--font-accent);font-size:1.14em;font-weight:400;font-style:normal;font-synthesis:none;font-kerning:normal;letter-spacing:0;line-height:.98;color:var(--brand-yellow);white-space:nowrap;text-transform:none;padding-inline:calc(var(--script-overhang) + var(--accent-gap)) .06em;margin-inline:0;text-wrap:nowrap}
+/* Keep equal layout width when moving optical spacing to the end of a wrapped line. */
+.content-preserved .heading-accent.accent-line-start{padding-inline:var(--script-overhang) calc(.06em + var(--accent-gap))}
+.content-preserved .hero-title-insurance.heading-accent{display:block;width:max-content;max-width:100%;font-size:1.12em;line-height:1.04;margin-top:-.025em;margin-left:0;padding-inline:var(--script-overhang) .06em;padding-bottom:.1em;margin-bottom:-.1em}
+.content-preserved .cinema-intro .hero-fleet-ambition{color:#fff;line-height:1.18;max-width:650px}
+.content-preserved .cinema-intro .heading-accent{font-size:1.1em}
+.content-preserved .cinema-caption .continuum-label{line-height:1.2}
+.content-preserved .section h2{line-height:1.16}
+.content-preserved .claims-copy h2,.content-preserved .market-copy h2,.content-preserved #fit h2,.content-preserved [class*='__applyCopy'] h2{line-height:1.16}
+.content-preserved .problem-section .section-heading h2{max-width:950px}
+@media(max-width:800px){
+ .content-preserved .heading-accent{font-size:1.1em;line-height:1.02}
+ .content-preserved .hero-title-insurance.heading-accent{font-size:1.14em;margin-top:0}
+ .content-preserved .section h2,.content-preserved .claims-copy h2,.content-preserved .market-copy h2,.content-preserved #fit h2,.content-preserved [class*='__applyCopy'] h2{line-height:1.2}
+ .content-preserved .cinema-intro .hero-fleet-ambition{font-size:clamp(34px,7.7vw,52px);max-width:100%;line-height:1.2}
+ .content-preserved .problem-section h2 .heading-accent{font-size:1.01em}
+}

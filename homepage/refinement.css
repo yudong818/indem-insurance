@@ -1,0 +1,9 @@
+/* Image exposure only. The existing palette, type, borders and surfaces come unchanged from review.css. */
+.hero-fleet-image{filter:brightness(1.16) saturate(.6)}
+.cinema-photo{filter:brightness(1.16) saturate(.65)}
+.problem-evidence-image img{filter:brightness(.94) saturate(.52)}
+.trucking-gallery img,.claims-image-wrap img{filter:brightness(.97) saturate(.5)}
+/* Reduce the opacity of existing dark photographic overlays without changing their colors or shape. */
+.hero-wash{opacity:.9}
+.hero-fleet-shade{opacity:.78}
+.cinema-shade{opacity:.85}

@@ -1,0 +1,49 @@
+/* Production sizing and the existing accessible application component. */
+.homepage-shell { min-height: 100svh; }
+.homepage-shell .hero { height: calc(100svh - var(--header-height, 90px) - 64px); min-height: 580px; }
+.homepage-shell .hero-content { height: 100%; min-height: 0; }
+.homepage-shell .cinema-intro.shell { top: 28px; }
+.homepage-shell, .homepage-shell * { letter-spacing: 0 !important; }
+.homepage-shell .hero h1 { font-size: 104px; }
+.homepage-shell .section h2,
+.homepage-shell .claims-copy h2,
+.homepage-shell .market-copy h2 { font-size: 56px; }
+.homepage-shell .problem-discovery h3 { font-size: 38px; }
+.homepage-shell .cinema-intro .hero-fleet-ambition { font-size: 52px; }
+.homepage-shell .cinema-caption h2,
+.homepage-shell .cinema-caption .continuum-label { font-size: 60px; }
+.homepage-shell #apply form[aria-busy="true"] { cursor: progress; }
+.homepage-shell #apply [class*="__successPanel"] {
+  border: 1px solid #595959;
+  border-radius: 4px;
+  padding: 32px;
+  background: #202020;
+  color: #ededed;
+}
+.homepage-shell #apply [class*="__successPanel"] h3 { color: #fff; }
+.homepage-shell #apply [class*="__successPanel"] button { color: #111; background: #ffd84f; }
+.homepage-shell #apply [class*="__formError"] { color: #ffb9b9; }
+@media (max-width: 1100px) {
+  .homepage-shell .hero h1 { font-size: 76px; }
+  .homepage-shell .section h2,
+  .homepage-shell .claims-copy h2,
+  .homepage-shell .market-copy h2 { font-size: 44px; }
+}
+@media (max-width: 800px) {
+  .homepage-shell .hero { min-height: 560px; }
+  .homepage-shell .hero h1 { font-size: 58px; }
+  .homepage-shell .section h2,
+  .homepage-shell .claims-copy h2,
+  .homepage-shell .market-copy h2 { font-size: 36px; }
+  .homepage-shell .problem-discovery h3 { font-size: 32px; }
+  .homepage-shell .cinema-intro .hero-fleet-ambition { font-size: 36px; }
+  .homepage-shell .cinema-caption h2,
+  .homepage-shell .cinema-caption .continuum-label { font-size: 38px; }
+}
+@media (max-width: 380px) {
+  .homepage-shell .hero h1 { font-size: 48px; }
+  .homepage-shell .heading-accent { white-space: normal; text-wrap: wrap; }
+  .homepage-shell .cinema-intro .hero-fleet-ambition { font-size: 30px; }
+  .homepage-shell .cinema-caption .continuum-label { font-size: 32px; }
+  .homepage-shell #apply h2 { font-size: 38px; }
+}
