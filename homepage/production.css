@@ -1,10 +1,32 @@
 /* Production sizing and the existing accessible application component. */
+@font-face {
+  font-family: 'Indem Display';
+  src: url('/homepage/assets/fonts/inter-latin-variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
 .homepage-shell { min-height: 100svh; }
 .homepage-shell .hero { height: calc(100svh - var(--header-height, 90px) - 64px); min-height: 580px; }
 .homepage-shell .hero-content { height: 100%; min-height: 0; }
 .homepage-shell .cinema-intro.shell { top: 28px; }
 .homepage-shell, .homepage-shell * { letter-spacing: 0 !important; }
 .homepage-shell .hero h1 { font-size: 104px; }
+.homepage-shell .hero-title-line {
+  font-family: 'Indem Display', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-kerning: normal;
+  font-synthesis: none;
+  line-height: 1.12;
+  gap: .22em;
+}
+.homepage-shell .hero-title-line .hero-title-rotation,
+.homepage-shell .hero-title-line .hero-title-static {
+  font: inherit;
+}
+.homepage-shell .hero-title-line .hero-title-rotation { height: auto; }
 .homepage-shell .section h2,
 .homepage-shell .claims-copy h2,
 .homepage-shell .market-copy h2 { font-size: 56px; }
