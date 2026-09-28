@@ -1,0 +1,73 @@
+/* Framework isolation and responsive fixes; approved media and copy are unchanged. */
+body:has(.physical-ai-approved) { background: #111; }
+.physical-ai-approved { min-height: 100svh; }
+.physical-ai-approved, .physical-ai-approved * { letter-spacing: 0; }
+.physical-ai-approved :is(h1, h2, h3) { font-family: Manrope, Arial, sans-serif; }
+.physical-ai-approved .hero { background: #111; color: #f7f7f5; min-height: 0; height: calc(100svh - 64px); }
+.physical-ai-approved .hero h1 { width: auto; margin: 0; color: #f7f7f5; font-weight: 530; }
+.physical-ai-approved .heroCopy { padding-top: 160px; }
+.physical-ai-approved .heroLede { max-width: 490px; }
+.physical-ai-approved .pilotSection { scroll-margin-top: 86px; }
+.physical-ai-approved .pilotForm, .physical-ai-approved .fieldRow { min-width: 0; }
+.physical-ai-approved .pilotForm label { min-width: 0; }
+.physical-ai-approved .pilotForm input, .physical-ai-approved .pilotForm select { min-width: 0; }
+.physical-ai-approved .pilotForm textarea { max-width: 100%; }
+.physical-ai-approved .motionControl { position: fixed; right: 18px; bottom: 18px; z-index: 45; width: 42px; height: 42px; justify-content: center; padding: 0; border: 1px solid #555; border-radius: 50%; background: #111; color: #eee; }
+.physical-ai-approved .motionControl svg { width: 17px; height: 17px; }
+.physical-ai-approved .motionControl .playGlyph { display: none; }
+.physical-ai-approved .motionControl[aria-pressed="true"] .pauseGlyph { display: none; }
+.physical-ai-approved .motionControl[aria-pressed="true"] .playGlyph { display: block; }
+.physical-ai-approved .motionLabel { position: absolute; right: 51px; padding: 6px 10px; white-space: nowrap; background: #111; border: 1px solid #555; border-radius: 3px; font-size: 12px; opacity: 0; pointer-events: none; }
+.physical-ai-approved .motionControl:is(:hover, :focus-visible) .motionLabel { opacity: 1; }
+@media (min-width: 1700px) {
+  .physical-ai-approved .heroCopy { padding-top: 180px; }
+  .physical-ai-approved .hero h1 { font-size: 118px; }
+}
+@media (max-width: 1200px) {
+  .physical-ai-approved .hero h1 { font-size: 80px; }
+  .physical-ai-approved .heroCopy { padding-top: 135px; }
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .physical-ai-approved .heroLede { max-width: min(400px, 48%); }
+}
+@media (max-width: 760px) {
+  .physical-ai-approved .hero { height: auto; min-height: 0; padding-bottom: 35px; }
+  .physical-ai-approved .heroCopy { padding-top: 112px; }
+  .physical-ai-approved .hero h1 { font-size: 52px; line-height: 1.02; }
+  .physical-ai-approved .heroObject { top: 250px; }
+  .physical-ai-approved .heroLede { margin-top: 282px; }
+  .physical-ai-approved .riskStrip { padding-top: 0; }
+  .physical-ai-approved .pilotSection { scroll-margin-top: 76px; }
+  .physical-ai-approved .pilotForm label>span { font-size: 12px; }
+  .physical-ai-approved .passportHeading h2 { font-size: 49px; }
+  .physical-ai-approved .motionControl { top: 18px; right: 76px; bottom: auto; z-index: 61; }
+}
+@media (max-width: 370px) {
+  .physical-ai-approved .hero h1 { font-size: 42px; }
+  .physical-ai-approved .heroObject { top: 224px; }
+  .physical-ai-approved .heroLede { margin-top: 258px; font-size: 14px; }
+  .physical-ai-approved .problemHeading .oldAssumption { font-size: 24px; }
+  .physical-ai-approved .problemHeading h2>em { font-size: 56px; }
+  .physical-ai-approved .passportHeading h2 { font-size: 40px; }
+  .physical-ai-approved .visionIntro h2 { font-size: 37px; }
+  .physical-ai-approved .pilotCopy h2 { font-size: 43px; }
+  .physical-ai-approved .fieldRow { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) and (max-height: 700px) {
+  .physical-ai-approved .hero { padding-bottom: 18px; }
+  .physical-ai-approved .heroCopy { padding-top: 92px; }
+  .physical-ai-approved .hero .kicker { display: none; }
+  .physical-ai-approved .hero h1 { font-size: 32px; }
+  .physical-ai-approved .heroObject { top: 148px; right: -28%; width: 124%; height: 190px; aspect-ratio: auto; }
+  .physical-ai-approved .heroFilm { object-fit: cover; }
+  .physical-ai-approved .heroActions { left: 12px; right: auto; top: auto; bottom: 0; transform: none; }
+  .physical-ai-approved .heroLede { margin-top: 156px; font-size: 14px; line-height: 1.5; }
+  .physical-ai-approved .hero .ideaLink { margin-top: 16px; }
+}
+@media (min-width: 761px) and (max-height: 800px) {
+  .physical-ai-approved .hero { height: auto; min-height: calc(100svh - 64px); padding-bottom: 55px; }
+  .physical-ai-approved .heroCopy { padding-top: 120px; }
+  .physical-ai-approved .hero h1 { font-size: 76px; }
+  .physical-ai-approved .heroLede { font-size: 15px; margin-top: 22px; }
+  .physical-ai-approved .heroObject { top: 50px; }
+}
