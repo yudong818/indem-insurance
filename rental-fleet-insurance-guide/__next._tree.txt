@@ -1,4 +1,8 @@
 :HL["/_next/static/chunks/14n04ygok5al2.css","style"]
-:HL["/_next/static/chunks/0_4xnrkl8h3zh.css","style"]
-:HL["/assets/editorial/rental-hero.webp","image",{"fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"rental-fleet-insurance-guide","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"dq1zNfNrjc4JSyhRZPDuO"}
+:HL["/_next/static/media/inter_latin_variable-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/manrope_latin-s.p.0jqazm8k6u60w.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/yellowtail-s.p.0lomct2qbjwoz.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/035g9hau9f1ai.css","style"]
+:HL["/homepage/assets/indem-official.jpg","image"]
+:HL["/homepage/assets/hero-expanded/rental-coast.webp","image",{"fetchPriority":"high"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"rental-fleet-insurance-guide","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"XwyobYWM2iZ-nwNI7G0Uh"}
