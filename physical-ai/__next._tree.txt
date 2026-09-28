@@ -1,6 +1,6 @@
 :HL["/_next/static/chunks/14n04ygok5al2.css","style"]
 :HL["/physical-ai-design/design.css?v=20260928","style"]
-:HL["/physical-ai-design/production.css?v=20260928","style"]
+:HL["/physical-ai-design/production.css?v=20260928-datacenter","style"]
 :HL["/physical-ai-design/assets/indem-official-lockup.svg","image"]
 :HL["/physical-ai-design/assets/indem-official.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"physical-ai","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"fnw2qwSQ35xYJA567Vydq"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"physical-ai","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"rQ0CA-VaGYPzY1AXU8wzO"}

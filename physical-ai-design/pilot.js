@@ -20,12 +20,34 @@ const PilotIntake = (() => {
       const error = form.querySelector('.formError');
       const label = button.innerHTML;
       let sending = false;
+      const system = form.elements.namedItem('Physical AI system');
+      const dataCenterFields = form.querySelector('.dataCenterFields');
+      function syncProjectFields() {
+        const isDataCenter = system.value === 'Data center / AI infrastructure';
+        dataCenterFields.hidden = !isDataCenter;
+        dataCenterFields.disabled = !isDataCenter;
+      }
+      system.addEventListener('change', syncProjectFields);
+      form.addEventListener('reset', () => queueMicrotask(syncProjectFields));
+      page.querySelectorAll('[data-pilot-system]').forEach(link => {
+        link.addEventListener('click', () => {
+          if (sending) return;
+          form.hidden = false;
+          success.hidden = true;
+          system.value = link.dataset.pilotSystem;
+          syncProjectFields();
+        });
+      });
+      syncProjectFields();
       form.addEventListener('submit', async event => {
         event.preventDefault();
         if (sending || !form.reportValidity()) return;
         const data = new FormData(form);
         if (data.get('_honey')) return;
-        data.set('Campaign', 'Indem Physical AI design-partner pilot');
+        data.set('Campaign', 'Indem Physical AI + AI infrastructure design-partner pilot');
+        if (system.value === 'Data center / AI infrastructure') {
+          data.set('_subject', 'New Indem data center pilot inquiry');
+        }
         data.set('Source URL', window.location.href);
         data.set('Referrer', document.referrer || 'Direct');
         const params = new URLSearchParams(window.location.search);

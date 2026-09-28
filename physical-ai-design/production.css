@@ -12,6 +12,19 @@ body:has(.physical-ai-approved) { background: #111; }
 .physical-ai-approved .pilotForm label { min-width: 0; }
 .physical-ai-approved .pilotForm input, .physical-ai-approved .pilotForm select { min-width: 0; }
 .physical-ai-approved .pilotForm textarea { max-width: 100%; }
+.physical-ai-approved .visionPitch { min-width: 0; }
+.physical-ai-approved .dataCenterPilotLink { margin-top: 24px; color: var(--yellow); font-size: 15px; flex-wrap: wrap; }
+.physical-ai-approved .dataCenterFields { display: grid; gap: 22px; min-width: 0; margin: 0; padding: 20px 0 0; border: 0; border-top: 1px solid #ffffff25; }
+.physical-ai-approved .dataCenterFields[hidden] { display: none; }
+.physical-ai-approved .dataCenterFields legend { padding: 0 0 8px; font-size: 13px; color: #d3d3ce; }
+.physical-ai-approved .dataCenterFields .fieldRow { grid-template-columns: 1fr; }
+.physical-ai-approved a.riskType:focus-visible { outline: 2px solid var(--yellow); outline-offset: 4px; }
+@media (min-width: 1400px) {
+  .physical-ai-approved .riskTypes { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+}
+@media (min-width: 901px) and (max-width: 1399px) {
+  .physical-ai-approved .riskTypes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 .physical-ai-approved .motionControl { position: fixed; right: 18px; bottom: 18px; z-index: 45; width: 42px; height: 42px; justify-content: center; padding: 0; border: 1px solid #555; border-radius: 50%; background: #111; color: #eee; }
 .physical-ai-approved .motionControl svg { width: 17px; height: 17px; }
 .physical-ai-approved .motionControl .playGlyph { display: none; }

@@ -5,4 +5,4 @@
 :HL["/_next/static/chunks/035g9hau9f1ai.css","style"]
 :HL["/homepage/assets/indem-official.jpg","image"]
 :HL["/homepage/assets/hero-expanded/rental-coast.webp","image",{"fetchPriority":"high"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"rental-fleet-insurance-guide","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"fnw2qwSQ35xYJA567Vydq"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"rental-fleet-insurance-guide","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"rQ0CA-VaGYPzY1AXU8wzO"}

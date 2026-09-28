@@ -7,7 +7,7 @@
     for (const file of ['pilot.js', 'design.js', 'vision.js', 'system-hover.js']) {
       await new Promise((resolve, reject) => {
         const script = document.createElement('script');
-        script.src = `/physical-ai-design/${file}?v=20260928`;
+        script.src = `/physical-ai-design/${file}?v=20260928-datacenter`;
         script.onload = resolve;
         script.onerror = reject;
         page.append(script);
