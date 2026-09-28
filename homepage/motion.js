@@ -1,16 +1,23 @@
-/* Design preview only. No forms, analytics, or external submission side effects. */
+/* Brand film and progressive scroll effects. No form or submission side effects. */
 (() => {
   const root = document.documentElement;
   const story = document.querySelector('.cinema-story');
   const stage = document.querySelector('.cinema-stage');
   const aperture = document.querySelector('#aperture-transform');
   const photo = document.querySelector('.cinema-photo');
+  const mobileMask = document.querySelector('.cinema-mobile-mask');
+  const lite = matchMedia('(max-width: 900px), (pointer: coarse)').matches || Boolean(navigator.connection?.saveData);
+  root.classList.toggle('cinema-lite', lite);
+  photo.dataset.playback = lite ? 'single-mobile' : 'desktop-crossfade';
   const firstFilm = photo.querySelector('video');
-  const standbyFilm = firstFilm.cloneNode(true);
-  standbyFilm.dataset.active='false';
-  standbyFilm.setAttribute('aria-hidden','true');
-  photo.append(standbyFilm);
-  const films=[firstFilm,standbyFilm];
+  const films=[firstFilm];
+  if(!lite){
+    const standbyFilm=firstFilm.cloneNode(true);
+    standbyFilm.dataset.active='false';
+    standbyFilm.setAttribute('aria-hidden','true');
+    photo.append(standbyFilm);
+    films.push(standbyFilm);
+  }
   const serviceCue=document.querySelector('.cinema-service-cue');
   const intro = document.querySelector('.cinema-intro');
   const caption = document.querySelector('.cinema-caption');
@@ -29,6 +36,7 @@
   let storyTop = 0;
   let storyRange = 1;
   let narrow = false;
+  let filmVisible=false,filmNear=false,sourceLoaded=false,paintedProgress=-1,paintedHero=-1;
   let activeFilm=0, filmFrame=0, blending=false, blendTimer=0, blendVersion=0;
   let retryAfter=0, lastFilm=null, lastFilmTime=-1, lastProgressAt=0, pageActive=true;
   const pendingPlay = new Set();
@@ -36,13 +44,21 @@
   const smooth = n => n*n*(3-2*n);
   // The foreground film runs continuously through the aperture and full-screen view.
   // Native looping is a fallback when the preloaded crossfade buffer is not ready.
-  films.forEach((film,index)=>{
+  films.forEach(film=>{
     film.muted=true;film.defaultMuted=true;film.playsInline=true;
-    film.loop=true;film.preload='auto';film.autoplay=index===0;
+    film.loop=true;film.preload='none';film.autoplay=false;
   });
-  const filmMayPlay=()=>!reduced&&!document.hidden&&pageActive;
+  const filmMayPlay=()=>sourceLoaded&&filmVisible&&!reduced&&!document.hidden&&pageActive;
+  function loadFilm(){
+    if(sourceLoaded||reduced||!filmNear)return;
+    sourceLoaded=true;
+    for(const film of films){
+      film.src=lite?firstFilm.dataset.mobileSrc:firstFilm.dataset.desktopSrc;
+      film.preload='auto';film.load();
+    }
+  }
   function queueFilmFrame(){
-    if(filmMayPlay()&&!filmFrame)filmFrame=requestAnimationFrame(watchFilm);
+    if(!lite&&filmMayPlay()&&!filmFrame)filmFrame=requestAnimationFrame(watchFilm);
   }
   function stopFilm(){
     blendVersion++;
@@ -63,6 +79,7 @@
     }catch{pendingPlay.delete(film);retryAfter=performance.now()+400;}
   }
   function syncFilm(){
+    loadFilm();
     if(!filmMayPlay()){stopFilm();return;}
     resumeFilm();
     queueFilmFrame();
@@ -120,14 +137,27 @@
     film.addEventListener('ended',()=>{
       if(film===films[activeFilm]&&filmMayPlay()){film.currentTime=0;syncFilm();}
     });
+    if(lite)film.addEventListener('timeupdate',()=>{
+      const active=String(film.currentTime>=1.6&&film.currentTime<=4.8);
+      if(serviceCue.dataset.active!==active)serviceCue.dataset.active=active;
+    });
   });
+  new IntersectionObserver(entries=>{
+    filmNear=entries[0].isIntersecting;
+    if(filmNear)loadFilm();
+  },{rootMargin:'300px 0px'}).observe(stage);
+  new IntersectionObserver(entries=>{
+    filmVisible=entries[0].isIntersecting;
+    photo.dataset.visible=String(filmVisible);
+    syncFilm();
+  }).observe(stage);
   document.addEventListener('visibilitychange',()=>{retryAfter=0;syncFilm();});
   window.addEventListener('pageshow',()=>{pageActive=true;retryAfter=0;syncFilm();});
   window.addEventListener('pagehide',()=>{pageActive=false;stopFilm();});
   window.addEventListener('focus',()=>{retryAfter=0;syncFilm();});
   ['pointerdown','keydown'].forEach(event=>document.addEventListener(event,()=>{retryAfter=0;syncFilm();},{passive:true}));
   // Recover browser suspension even when it does not emit a new intersection event.
-  setInterval(()=>{if(filmMayPlay())syncFilm();},1000);
+  if(!lite)setInterval(()=>{if(filmMayPlay())syncFilm();},1000);
 
   const revealElements = document.querySelectorAll('.section-heading,.fleet-type,.approach-copy,.steps,.editorial-note,.principles article,.resource,.start-layout,[data-scroll-reveal]');
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
@@ -139,10 +169,19 @@
     storyTop = story.getBoundingClientRect().top + window.scrollY;
     storyRange = Math.max(1,story.offsetHeight - stage.offsetHeight);
     narrow = window.innerWidth < 680;
+    paintedProgress=-1;paintedHero=-1;
     requestFrame();
   }
 
   function paint(value){
+    const heroProgress=clamp(window.scrollY/Math.max(1,hero.offsetHeight));
+    if(!lite&&heroProgress!==paintedHero){
+      heroPhoto.style.setProperty('--hero-scroll-y',`${heroProgress*65}px`);
+      heroCopy.style.setProperty('--hero-copy-y',`${heroProgress*-22}px`);
+      paintedHero=heroProgress;
+    }
+    if(value===paintedProgress)return;
+    paintedProgress=value;
     const zoomProgress = smooth(clamp((value-.1)/.58));
     const startingScale = narrow ? .65 : 1.07;
     // The supplied wordmark's capital I occupies x=1254..1277, y=569..690 in the original JPEG.
@@ -150,8 +189,15 @@
     const pivotX = 70 + 1300 * 1265.5 / 2532;
     const pivotY = 133 + 600 * 629.5 / 1170;
     const scale = startingScale * Math.pow(145/startingScale,zoomProgress);
-    aperture.setAttribute('transform',`translate(720 450) scale(${scale.toFixed(4)}) translate(${-pivotX.toFixed(4)} ${-pivotY.toFixed(4)})`);
-    photo.style.transform = `scale(${(1.13-.13*value).toFixed(4)}) translateX(${((value-.5)*.65).toFixed(3)}%)`;
+    if(lite){
+      // A pre-baked cutout stays on one composited layer; no huge SVG filter surface.
+      const reveal=smooth(clamp((value-.1)/.5));
+      mobileMask.style.transform=`translateZ(0) scale(${(1+reveal*.8).toFixed(4)})`;
+      mobileMask.style.opacity=String(1-smooth(clamp((value-.24)/.3)));
+    }else{
+      aperture.setAttribute('transform',`translate(720 450) scale(${scale.toFixed(4)}) translate(${-pivotX.toFixed(4)} ${-pivotY.toFixed(4)})`);
+      photo.style.transform = `scale(${(1.13-.13*value).toFixed(4)}) translateX(${((value-.5)*.65).toFixed(3)}%)`;
+    }
     const introProgress = 1-smooth(clamp((value-.03)/.22));
     intro.style.opacity = String(introProgress);
     intro.style.transform = `translateY(${-value*42}px)`;
@@ -163,9 +209,6 @@
     // Invisible headings are removed from keyboard/assistive navigation during the transition.
     caption.setAttribute('aria-hidden',String(captionProgress < .05));
     lifecycle.forEach((item,index)=>item.style.setProperty('--phase',smooth(clamp((value-.7-index*.038)/.11)).toFixed(4)));
-    const heroProgress=clamp(window.scrollY/Math.max(1,hero.offsetHeight));
-    heroPhoto.style.setProperty('--hero-scroll-y',`${heroProgress*65}px`);
-    heroCopy.style.setProperty('--hero-copy-y',`${heroProgress*-22}px`);
   }
 
   function requestFrame(){if(!frame&&!reduced)frame=requestAnimationFrame(tick);}
@@ -194,13 +237,13 @@
     toggle.setAttribute('aria-label',reduced?'Enable motion':'Reduce motion');
     toggle.setAttribute('title',reduced?'Enable motion':'Reduce motion');
     if(reduced){
-      [photo,intro,caption,heroPhoto,heroCopy,progressLine].forEach(element=>element.removeAttribute('style'));
+      [photo,mobileMask,intro,caption,heroPhoto,heroCopy,progressLine].forEach(element=>element.removeAttribute('style'));
       caption.removeAttribute('aria-hidden');
       intro.removeAttribute('aria-hidden');
       lifecycle.forEach(item=>item.style.removeProperty('--phase'));
       revealElements.forEach(element=>element.classList.add('in-view'));
     }else{
-      if(typeof Lenis==='function'){
+      if(!lite&&typeof Lenis==='function'){
         lenis=new Lenis({autoRaf:true,lerp:.14,wheelMultiplier:.95,smoothWheel:true,syncTouch:false,anchors:true,allowNestedScroll:true});
         lenis.on('scroll',requestFrame);
       }

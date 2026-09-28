@@ -33,6 +33,27 @@
 .homepage-shell .cinema-intro .hero-fleet-ambition { font-size: 52px; }
 .homepage-shell .cinema-caption h2,
 .homepage-shell .cinema-caption .continuum-label { font-size: 60px; }
+.cinema-mobile-mask { display: none; }
+.cinema-lite.motion-enabled .cinema-mask { display: none; }
+.cinema-lite.motion-enabled .cinema-mobile-mask {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  pointer-events: none;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+.cinema-lite .cinema-film {
+  transition: none;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+.cinema-lite.motion-enabled .cinema-photo { transform: none; will-change: auto; }
+.cinema-lite.motion-enabled .cinema-story { height: 200svh; }
 .homepage-shell #apply form[aria-busy="true"] { cursor: progress; }
 .homepage-shell #apply [class*="__successPanel"] {
   border: 1px solid #595959;
