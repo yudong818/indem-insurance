@@ -3,4 +3,4 @@
 :HL["/_next/static/media/yellowtail-s.p.0lomct2qbjwoz.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/chunks/04rpkbj~a-ku0.css","style"]
 :HL["/physical-ai-design/assets/indem-official-lockup.svg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"physical-ai","param":null,"prefetchHints":0,"slots":{"children":{"name":"readiness-index","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"CfPNr98nWPqOnefgPEu_m"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"physical-ai","param":null,"prefetchHints":0,"slots":{"children":{"name":"readiness-index","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"JVgIPchBzlI9pLbtQ13nf"}
