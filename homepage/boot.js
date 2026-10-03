@@ -14,7 +14,7 @@
   async function start() {
     for (const file of ['assets/lenis.min.js', 'review.js', 'heading-accents.js', 'motion.js', 'product-motion.js', 'narrative-scroll.js', 'paperwork-motion.js']) {
       if (file === 'assets/lenis.min.js' && (matchMedia('(max-width: 900px), (pointer: coarse)').matches || navigator.connection?.saveData)) continue;
-      await load(`/homepage/${file}?v=20260928-mobile-film`);
+      await load(`/homepage/${file}?v=${file === 'review.js' ? '20261002-products' : '20260928-mobile-film'}`);
     }
     document.querySelector('.homepage-shell').dataset.ready = 'true';
   }
