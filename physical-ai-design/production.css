@@ -19,6 +19,20 @@ body:has(.physical-ai-approved) { background: #111; }
 .physical-ai-approved .dataCenterFields legend { padding: 0 0 8px; font-size: 13px; color: #d3d3ce; }
 .physical-ai-approved .dataCenterFields .fieldRow { grid-template-columns: 1fr; }
 .physical-ai-approved a.riskType:focus-visible { outline: 2px solid var(--yellow); outline-offset: 4px; }
+.physical-ai-approved .insurancePartners { padding: 32px 0 38px; border-block: 1px solid #ffffff25; background: #111; }
+.physical-ai-approved .insurancePartners h2 { margin: 0 0 24px; padding-left: 12px; border-left: 3px solid var(--yellow); color: #d3d3ce; font-size: 14px; font-weight: 500; line-height: 1.5; }
+.physical-ai-approved .insurancePartnerList { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; }
+.physical-ai-approved .insurancePartnerList li { display: grid; grid-template-rows: minmax(18px, auto) minmax(42px, auto) minmax(18px, auto); align-content: start; gap: 6px; min-width: 0; padding: 12px 24px; text-align: center; }
+.physical-ai-approved .insurancePartnerList li + li { border-left: 1px solid #ffffff25; }
+.physical-ai-approved .insurancePartnerList span { min-width: 0; overflow-wrap: anywhere; }
+.physical-ai-approved .insurancePartnerLabel, .physical-ai-approved .insurancePartnerDetail { color: #a7a7a2; font-size: 12px; line-height: 1.5; }
+.physical-ai-approved .insurancePartnerName { color: #f7f7f5; font-size: 28px; font-weight: 450; line-height: 1.4; }
+.physical-ai-approved .insurancePartnerArcadia { font-family: Georgia, "Times New Roman", serif; font-size: 35px; line-height: 1.1; }
+@media (max-width: 540px) {
+  .physical-ai-approved .insurancePartnerList { grid-template-columns: 1fr; }
+  .physical-ai-approved .insurancePartnerList li { padding: 20px 0; }
+  .physical-ai-approved .insurancePartnerList li + li { border-left: 0; border-top: 1px solid #ffffff25; }
+}
 @media (min-width: 1400px) {
   .physical-ai-approved .riskTypes { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 }
