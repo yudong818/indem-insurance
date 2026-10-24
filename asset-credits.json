@@ -1,0 +1,386 @@
+{
+  "checked_on": "2026-10-23",
+  "use": "Illustrative industry imagery. Depicted organizations are not represented as Indem customers or partners.",
+  "assets": [
+    {
+      "files": [
+        "real-robotics.mp4",
+        "real-robotics.webp"
+      ],
+      "author": "Usman AbdulrasheedGambo",
+      "source": "https://www.pexels.com/video/industrial-robot-arm-in-high-tech-factory-32386532/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Stock footage showing robotic pick-and-place motion."
+    },
+    {
+      "files": [
+        "real-fleet.webp"
+      ],
+      "author": "Luke Miller",
+      "source": "https://www.pexels.com/photo/row-of-cars-parked-in-an-urban-parking-lot-29566909/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Brand marks removed with a local photo retouch. Original licensed photograph and natural composition preserved."
+    },
+    {
+      "files": [
+        "real-autonomy.webp"
+      ],
+      "author": "clement proust",
+      "source": "https://unsplash.com/photos/a-white-self-driving-car-on-a-city-street-j-NjnQ0A3Sk",
+      "license": "https://unsplash.com/license",
+      "description": "Brand marks removed with a local photo retouch. Original licensed photograph and natural composition preserved."
+    },
+    {
+      "files": [
+        "real-medical.webp"
+      ],
+      "author": "Accuray",
+      "source": "https://unsplash.com/photos/a-room-with-a-bed-and-a-table-VJ3o_O54Xp8",
+      "license": "https://unsplash.com/license",
+      "description": "Brand marks removed with a local photo retouch. Original licensed photograph and natural composition preserved."
+    },
+    {
+      "files": [
+        "real-infrastructure.webp"
+      ],
+      "author": "Brett Sayles",
+      "source": "https://www.pexels.com/photo/server-racks-on-data-center-5480781/",
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "files": [
+        "real-fleet-film.mp4",
+        "real-fleet-film.webp"
+      ],
+      "author": "Chris Flaten",
+      "source": "https://www.pexels.com/video/4157778/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Filmed truck wheels rolling on a road, played at 0.67x source speed. No generated frames or simulated photograph movement."
+    },
+    {
+      "files": [
+        "real-sausalito.webp"
+      ],
+      "author": "Anitha Kapu",
+      "source": "https://www.pexels.com/photo/aerial-view-of-city-buildings-near-body-of-water-4071070/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Real photograph of Sausalito waterfront and hillside, proportionally resized. No synthetic camera movement."
+    },
+    {
+      "files": [
+        "hero-bay.mp4",
+        "hero-bay-mobile.mp4",
+        "real-hero.webp"
+      ],
+      "author": "ArtHouse Studio",
+      "source": "https://www.pexels.com/video/aerial-shot-of-a-bridge-8491293/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Actual Golden Gate Bridge aerial footage; first four seconds of the prepared Bay Area source. Proportionally resized, converted to 24fps and muted. Mobile normal crop focuses on bridge traffic and tower. Still poster is the first Bay Area frame."
+    },
+    {
+      "files": [
+        "hero-industries.mp4",
+        "hero-industries-mobile.mp4"
+      ],
+      "author": "Jason James",
+      "source": "https://www.pexels.com/video/autonomous-vehicle-on-las-vegas-street-31761705/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Real autonomous-vehicle sensor footage; normal crop excludes brand marks. Filmed in Las Vegas, not represented as a Bay Area location. Played in the separate Pexels-only industry reel, with ordinary crops, silence, 24fps conversion and 0.375-second crossfades."
+    },
+    {
+      "files": [
+        "hero-industries.mp4",
+        "hero-industries-mobile.mp4"
+      ],
+      "author": "Miroslav Zaruba",
+      "source": "https://www.pexels.com/video/ocelotwood-16938947/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Real industrial pallet-handling robot. Played in the separate Pexels-only industry reel, with ordinary crops, silence, 24fps conversion and 0.375-second crossfades."
+    },
+    {
+      "files": [
+        "hero-industries.mp4",
+        "hero-industries-mobile.mp4"
+      ],
+      "author": "Kindel Media",
+      "source": "https://www.pexels.com/video/8566712/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Real delivery robot in a low front-angle shot, distinct source and framing from the robotics section. Played in the separate Pexels-only industry reel, with ordinary crops, silence, 24fps conversion and 0.375-second crossfades."
+    },
+    {
+      "files": [
+        "hero-industries.mp4",
+        "hero-industries-mobile.mp4"
+      ],
+      "author": "Stefan Maritz",
+      "source": "https://www.pexels.com/video/advanced-surgical-robot-in-operating-room-30593273/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Real medical robot close-up. Source lettering excluded with a normal crop. No diagnosis or autonomy capability is inferred. Played in the separate Pexels-only industry reel, with ordinary crops, silence, 24fps conversion and 0.375-second crossfades."
+    },
+    {
+      "files": [
+        "hero-industries.mp4",
+        "hero-industries-mobile.mp4"
+      ],
+      "author": "Dima Krivoy",
+      "source": "https://www.pexels.com/video/blue-colored-cables-1085656/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Real data-center network hardware. Illustrative infrastructure; no specific AI workload is asserted. Played in the separate Pexels-only industry reel, with ordinary crops, silence, 24fps conversion and 0.375-second crossfades."
+    },
+    {
+      "files": [
+        "real-robotics.mp4",
+        "about-commercial-robot.webp"
+      ],
+      "author": "Kindel Media",
+      "source": "https://www.pexels.com/video/a-robot-rover-on-the-road-8566713/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Second shot: real filmed commercial delivery robot. Frame-tracked removal of printed brand marks and identification stickers on white body panels. Recorded camera and physical motion retained; no generated motion or still-image animation. About gallery still: real-robotics.mp4 frame at16.5 seconds; ordinary crop x380/y360 width1080 height675, resized to1000x625. Complete rover body, wheels and safety flag retained from the existing debranded licensed footage; no generated image content."
+    },
+    {
+      "files": [
+        "risk-passport-evidence.webp"
+      ],
+      "author": "Opt Lasers from Poland",
+      "source": "https://www.pexels.com/photo/close-up-shot-of-a-cnc-laser-7254420/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Real CNC laser-processing photograph. Technical background illustrating precise physical operations, not a depiction of Risk Passport software, a scanner or an Indem deployment. Proportional format conversion only."
+    },
+    {
+      "files": [
+        "hero-humanoid.mp4",
+        "hero-humanoid-mobile.mp4",
+        "about-humanoid.webp"
+      ],
+      "author": "Zewei Zhang, Kehan Wen, Michael Xu, Junzhe He, Chenhao Li, Takahiro Miki, Clemens Schwarke, Chong Zhang, Xue Bin Peng and Marco Hutter",
+      "source": "https://wholebodylocomotion.github.io/",
+      "original_video": "https://wholebodylocomotion.github.io/static/clips/vaulting_01.mp4",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking (2026). Real full-body robot vaulting over an obstacle. Source seconds 3.2–7.2; normal crop excludes title/speed overlays, resize, 24fps and audio removal; mobile uses an 800px-wide normal following crop and a modest fit within a dark portrait canvas to retain the complete head, hands, feet and vaulting movement. No generated physical motion. These adapted films remain under CC BY-SA 4.0 and are independently played as separate assets from the Pexels films. About gallery still: frame at 2.5 seconds of hero-humanoid.mp4, ordinary 1536x960 crop at x300/y60 and proportional downscale to1000x625. Full robot body and recorded vaulting posture retained; background laboratory lettering falls outside the crop. This static adaptation is also distributed under CC BY-SA 4.0, with the same complete author attribution and source. No AI-generated image content or retouching.",
+      "license_notice_file": "hero-humanoid.license.txt"
+    },
+    {
+      "files": [
+        "about-medical-device.webp"
+      ],
+      "author": "Accuray",
+      "source": "https://unsplash.com/photos/a-person-lying-in-a-hospital-bed-SKLMuWsxi_w",
+      "license": "https://unsplash.com/license",
+      "description": "Actual robotic radiosurgery treatment equipment in a clinical room, from a different Accuray photograph than real-medical.webp. Ordinary upper-machine crop x2200/y0 width5200 height3250 from the9504x6336 original, proportionally resized to1000x625 and WebP encoded. Original manufacturer names and patient fall outside the crop; the real equipment, texture and lighting are unaltered. No AI generation, device reconstruction or pixel retouching. Do not infer autonomous diagnosis, customer status or manufacturer endorsement."
+    },
+    {
+      "author": "ArtHouse Studio",
+      "source": "https://www.pexels.com/video/aerial-shot-of-a-bridge-8491293/",
+      "license": "https://www.pexels.com/license/",
+      "files": [
+        "hero-scene-bay.mp4",
+        "hero-scene-bay-mobile.mp4"
+      ],
+      "description": "Continuous source excerpt, ordinary portrait crop, resized, muted and converted to 24fps. Golden Gate Bridge footage; no claim of an Indem deployment."
+    },
+    {
+      "author": "Zewei Zhang, Kehan Wen, Michael Xu, Junzhe He, Chenhao Li, Takahiro Miki, Clemens Schwarke, Chong Zhang, Xue Bin Peng and Marco Hutter",
+      "source": "https://wholebodylocomotion.github.io/",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "files": [
+        "hero-scene-humanoid.mp4",
+        "hero-scene-humanoid-mobile.mp4"
+      ],
+      "description": "Continuous source seconds3.0–8.625; normal crop removes title/speed overlays, proportionally resized, muted and converted to24fps. Small background laboratory name removed by optical frame tracking and conventional local inpainting of the dark door surface. Mobile ordinary following crop and dark fit preserve full body and actual vaulting motion. Real robot, physical motion and safety tether retained. No generated frames or motion. Adapted footage remains CC BY-SA4.0, separately played; no endorsement implied.",
+      "original_video": "https://wholebodylocomotion.github.io/static/clips/vaulting_01.mp4",
+      "license_notice_file": "hero-scene-humanoid.license.txt"
+    },
+    {
+      "author": "Jason James",
+      "source": "https://www.pexels.com/video/autonomous-vehicle-on-las-vegas-street-31761705/",
+      "license": "https://www.pexels.com/license/",
+      "files": [
+        "hero-scene-autonomy.mp4",
+        "hero-scene-autonomy-mobile.mp4"
+      ],
+      "description": "135 consecutive real frames from the original59.94fps source, beginning at0.25 seconds, conformed to24fps for5.625 seconds of approximately0.4x slow motion. No repeated, interpolated or generated frames. Normal crop excludes vehicle wheel marks, casino signs and window advertising; native crop resolution1000x562 enlarged to1080p. Filmed inLas Vegas; not claimed asBay Area or anIndem customer."
+    },
+    {
+      "author": "Miroslav Zaruba",
+      "source": "https://www.pexels.com/video/ocelotwood-16938947/",
+      "license": "https://www.pexels.com/license/",
+      "files": [
+        "hero-scene-industrial.mp4",
+        "hero-scene-industrial-mobile.mp4"
+      ],
+      "description": "Continuous real pallet-handling robot excerpt, natural speed, ordinary portrait crop, resized, muted and converted to24fps. No specific robot intelligence or customer relationship inferred."
+    },
+    {
+      "author": "Kindel Media (associated series; individual work-page metadata not independently rendered)",
+      "source": "https://www.pexels.com/video/8566720/",
+      "license": "https://www.pexels.com/license/",
+      "files": [
+        "hero-scene-commercial.mp4",
+        "hero-scene-commercial-mobile.mp4"
+      ],
+      "description": "Source8566720 seconds2.0–7.625, a continuous actual front-angle following shot distinct from the lower-section side shot. Small printed registration QR/identifiers on white plastic removed using frame-tracked same-frame panel reconstruction. Actual recorded scene, mechanical motion and camera motion retained. Ordinary portrait fit retains the rover body and wheels; resize, mute and24fps conversion. Exact page title/location not independently verified; noSF/Stanford claim. Associated source found through verified Kindel Media work8566713 More like this download44; individual page could not be rendered.",
+      "reference_source": "https://www.pexels.com/video/a-robot-rover-on-the-road-8566713/",
+      "official_download": "https://www.pexels.com/download/video/8566720/",
+      "original_video": "https://videos.pexels.com/video-files/8566720/8566720-uhd_3840_2160_30fps.mp4",
+      "provenance_note": "Official Pexels work8566713 More like this Download link leads to this exact hosted source. Individual work title and creator page remain not independently rendered; associated-series author qualification retained."
+    },
+    {
+      "author": "Dima Krivoy",
+      "source": "https://www.pexels.com/video/blue-colored-cables-1085656/",
+      "license": "https://www.pexels.com/license/",
+      "files": [
+        "hero-scene-infrastructure.mp4",
+        "hero-scene-infrastructure-mobile.mp4"
+      ],
+      "description": "Continuous real networking-hardware close-up, natural speed, ordinary portrait crop, resized, muted and converted to24fps. Illustrative data-center infrastructure; no AI workload or Bay Area location is inferred."
+    },
+    {
+      "author": "Usman AbdulrasheedGambo",
+      "source": "https://www.pexels.com/video/industrial-robot-arm-in-high-tech-factory-32386532/",
+      "license": "https://www.pexels.com/license/",
+      "files": [
+        "robotics-scene-industrial.mp4",
+        "robotics-scene-industrial-mobile.mp4"
+      ],
+      "description": "Continuous first5.625 seconds from the already selected industrial pick-and-place footage. Real yellow industrial arm movement retained at natural speed; ordinary portrait fit, resize, mute and24fps conversion."
+    },
+    {
+      "author": "Kindel Media",
+      "source": "https://www.pexels.com/video/a-robot-rover-on-the-road-8566713/",
+      "license": "https://www.pexels.com/license/",
+      "files": [
+        "robotics-scene-commercial.mp4",
+        "robotics-scene-commercial-mobile.mp4"
+      ],
+      "description": "Continuous prepared debranded side-angle source seconds2.0–7.625, distinct from Hero front-angle8566720. Existing frame-tracked removal of side/front printed brand marks and small identifiers preserved. Recorded physical/camera motion retained, no generated motion. Ordinary portrait crop, muted and24fps conversion; location unverified."
+    },
+    {
+      "files": [
+        "about-approach-operations.webp"
+      ],
+      "author": "Tiger Lily",
+      "source": "https://www.pexels.com/photo/men-working-in-a-warehouse-4481256/",
+      "license": "https://www.pexels.com/license/",
+      "description": "Ordinary crop (x0,y1042,right4583,bottom3333), resize and WebP format conversion only. Upper labeled products excluded. No generation, inpainting, mirroring or altered behavior. Illustrative operating-record review; not presented as Indem staff, clients, partners, or a specific Physical AI deployment."
+    },
+    {
+      "files": [
+        "robotics-scene-handling.mp4",
+        "robotics-scene-handling.webp",
+        "robotics-scene-handling-mobile.mp4",
+        "robotics-scene-handling-mobile.webp"
+      ],
+      "author": "Minku Kim, Kuan-Chia Chen, Aayam Shrestha, Li Fuxin, Stefan Lee and Alan Fern",
+      "source": "https://osudrl.github.io/Humanoid_Hanoi/",
+      "original_video": "https://osudrl.github.io/Humanoid_Hanoi/resources/hardware_per_skill/skill1.mp4",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license_notice_file": "robotics-scene-handling.license.txt",
+      "description": "Actual Digit V3 robot raises a cardboard box from near the floor and lowers it, at natural source speed. Continuous source seconds 4.5–10.125. Ordinary crop/fit places the intact robot and box in the desktop left half and portrait lower area; unused edge smoothly darkened into black for fixed overlay text. Printed chest brand mark removed by optical tracking and same-frame green-paint color reconstruction; detected portions of the cardboard-lid AprilTag research tracking graphic locally retouched by conventional inpainting; small non-brand research tracking marks may remain in some frames. Circular hardware connector, robot geometry, recorded physical movement, source lighting detail and visible safety tether retained. Background branded cartons fall outside the ordinary crop. Trimmed, resized, muted and converted to 24 fps; no mirror, generated motion, synthetic frames, looping or freeze padding. Poster images are ordinary frame extractions from 1.5 seconds of each adapted film. These separate adapted films and stills remain CC BY-SA 4.0. This is a real robot box-lifting demonstration, not walking transport; no Indem deployment, manufacturer/research affiliation or endorsement is implied."
+    },
+    {
+      "files": [
+        "manrope-latin.woff2"
+      ],
+      "author": "The Manrope Project Authors",
+      "source": "https://github.com/google/fonts/tree/main/ofl/manrope",
+      "license": "https://openfontlicense.org/open-font-license-official-text/",
+      "license_notice_file": "manrope-OFL.txt",
+      "description": "Manrope variable Latin webfont distributed with its SIL Open Font License 1.1 and copyright notice. Font not sold by itself; no font-name modification."
+    }
+  ],
+  "hero_playlist": [
+    {
+      "order": 1,
+      "kind": "bay",
+      "desktop": "hero-scene-bay.mp4",
+      "mobile": "hero-scene-bay-mobile.mp4",
+      "duration_seconds": 5.625,
+      "start_interval_seconds": 5,
+      "crossfade_seconds": 0.6,
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "order": 2,
+      "kind": "humanoid",
+      "desktop": "hero-scene-humanoid.mp4",
+      "mobile": "hero-scene-humanoid-mobile.mp4",
+      "duration_seconds": 5.625,
+      "start_interval_seconds": 5,
+      "crossfade_seconds": 0.6,
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "order": 3,
+      "kind": "autonomy",
+      "desktop": "hero-scene-autonomy.mp4",
+      "mobile": "hero-scene-autonomy-mobile.mp4",
+      "duration_seconds": 5.625,
+      "start_interval_seconds": 5,
+      "crossfade_seconds": 0.6,
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "order": 4,
+      "kind": "industrial",
+      "desktop": "hero-scene-industrial.mp4",
+      "mobile": "hero-scene-industrial-mobile.mp4",
+      "duration_seconds": 5.625,
+      "start_interval_seconds": 5,
+      "crossfade_seconds": 0.6,
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "order": 5,
+      "kind": "commercial",
+      "desktop": "hero-scene-commercial.mp4",
+      "mobile": "hero-scene-commercial-mobile.mp4",
+      "duration_seconds": 5.625,
+      "start_interval_seconds": 5,
+      "crossfade_seconds": 0.6,
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "order": 6,
+      "kind": "infrastructure",
+      "desktop": "hero-scene-infrastructure.mp4",
+      "mobile": "hero-scene-infrastructure-mobile.mp4",
+      "duration_seconds": 5.625,
+      "start_interval_seconds": 5,
+      "crossfade_seconds": 0.6,
+      "license": "https://www.pexels.com/license/"
+    }
+  ],
+  "robotics_playlist": [
+    {
+      "order": 1,
+      "kind": "handling",
+      "desktop": "robotics-scene-handling.mp4",
+      "mobile": "robotics-scene-handling-mobile.mp4",
+      "duration_seconds": 5.625,
+      "start_interval_seconds": 5,
+      "crossfade_seconds": 0.6,
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "order": 2,
+      "kind": "industrial",
+      "desktop": "robotics-scene-industrial.mp4",
+      "mobile": "robotics-scene-industrial-mobile.mp4",
+      "duration_seconds": 5.625,
+      "start_interval_seconds": 5,
+      "crossfade_seconds": 0.6,
+      "license": "https://www.pexels.com/license/"
+    },
+    {
+      "order": 3,
+      "kind": "commercial",
+      "desktop": "robotics-scene-commercial.mp4",
+      "mobile": "robotics-scene-commercial-mobile.mp4",
+      "duration_seconds": 5.625,
+      "start_interval_seconds": 5,
+      "crossfade_seconds": 0.6,
+      "license": "https://www.pexels.com/license/"
+    }
+  ],
+  "film_timing": "Each independent scene asset is135frames at24fps (5.625seconds), silent and faststart. Target scene starts5.0seconds apart with0.6second crossfade. CC BY-SA research clips are independent files, not flattened into differently licensed films."
+}

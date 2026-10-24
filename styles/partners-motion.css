@@ -1,0 +1,57 @@
+
+/* Two equal groups travel one complete group width, so the loop has no seam. */
+#people.partners{padding-top:72px;padding-bottom:54px}
+#people .partner-marquee{
+  --partner-group-width:min(1480px,calc(100vw - 2 * var(--gutter)));
+  max-width:1480px;
+  margin:38px auto 0;
+  overflow:hidden;
+}
+#people .partner-track{
+  display:flex;
+  align-items:center;
+  width:max-content;
+  animation:indem-partners-scroll 64s linear infinite;
+  will-change:transform;
+}
+#people .logo-grid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  align-items:center;
+  flex:0 0 var(--partner-group-width);
+  width:var(--partner-group-width);
+  max-width:none;
+  gap:0;
+  margin:0;
+  padding:0;
+}
+#people .logo-grid a{
+  height:74px;
+  min-width:0;
+  max-width:none;
+  padding:0 19px;
+  grid-column:auto;
+  justify-self:stretch;
+}
+#people .partner-marquee:hover .partner-track,
+#people .partner-marquee:focus-within .partner-track{animation-play-state:paused}
+@keyframes indem-partners-scroll{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(-50%,0,0)}
+}
+@media(max-width:800px){
+  #people.partners{padding-top:56px;padding-bottom:38px}
+  #people .partner-marquee{--partner-group-width:1150px;margin-top:26px}
+  #people .logo-grid a{height:70px;padding:0 25px}
+  #people .logo-grid img{max-height:60px}
+  #people .logo-grid .market-a-logo{max-width:130px;max-height:54px}
+}
+html.reduced-motion #people .partner-marquee{overflow-x:auto}
+html.reduced-motion #people .partner-track{animation:none;transform:none;will-change:auto}
+html.reduced-motion #people .logo-grid-copy{display:none}
+@media(prefers-reduced-motion:reduce){
+  #people .partner-marquee{overflow-x:auto}
+  #people .partner-track{animation:none;transform:none;will-change:auto}
+  #people .logo-grid-copy{display:none}
+}
+

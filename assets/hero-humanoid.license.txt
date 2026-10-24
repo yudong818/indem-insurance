@@ -1,0 +1,19 @@
+HUMANOID RESEARCH FOOTAGE — ATTRIBUTION AND LICENSE
+
+Work: Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking (2026).
+Authors: Zewei Zhang, Kehan Wen, Michael Xu, Junzhe He, Chenhao Li, Takahiro Miki, Clemens Schwarke, Chong Zhang, Xue Bin Peng and Marco Hutter.
+Affiliations: Robotic Systems Lab, ETH Zurich; EPFL; Simon Fraser University; ETH AI Center; NVIDIA.
+Project/source: https://wholebodylocomotion.github.io/
+Original video: https://wholebodylocomotion.github.io/static/clips/vaulting_01.mp4
+
+The project website states that it is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. No differing license is displayed for this embedded project clip.
+License: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+Full legal text: https://creativecommons.org/licenses/by-sa/4.0/legalcode.en
+
+Adapted files supplied under the same CC BY-SA 4.0 license:
+- hero-humanoid.mp4
+- hero-humanoid-mobile.mp4
+
+Changes by Indem: original source seconds 3.2–7.2 selected at natural playback speed; a normal crop of x96 y108 width1728 height972 excludes source title/speed overlays; resized to 1920x1080; converted to 24fps and silent H.264. The mobile version additionally uses a normal horizontally following crop from x1104 toward x704, width800 height1080, resized to720x972 and fitted within a720x1280 dark portrait canvas (154px above and below) to retain the complete body during the vault. The original robot body, environment, safety tether and recorded physical movement are retained. No generative video, frame interpolation, AI body edits or synthetic object motion were used.
+
+This independently played video is separate from the differently licensed Bay Area and Pexels industry films. The license notice concerns these video adaptations. No affiliation, customer relationship, partnership or endorsement by the researchers, universities, laboratory, NVIDIA or robot manufacturer is implied.

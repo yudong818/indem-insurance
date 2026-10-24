@@ -1,0 +1,6 @@
+/* Only the shared transparent logo changes; original page styling stays on its source host. */
+.physical-ai-approved .header .cleanWordmark,
+.physical-ai-approved .footer .wordmark{width:145px;height:auto;aspect-ratio:645/334;overflow:visible;mix-blend-mode:normal;line-height:0;background:transparent}
+.physical-ai-approved .header .cleanWordmark img,
+.physical-ai-approved .footer .wordmark img{position:static;display:block;inset:auto;width:100%;height:auto;max-width:100%;object-fit:contain;mix-blend-mode:normal;background:transparent}
+@media(max-width:760px){.physical-ai-approved .header .cleanWordmark,.physical-ai-approved .footer .wordmark{width:111px;height:auto}}

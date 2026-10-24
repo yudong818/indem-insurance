@@ -1,0 +1,13 @@
+Humanoid robotics research footage
+
+Project: Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking (2026).
+Authors: Zewei Zhang, Kehan Wen, Michael Xu, Junzhe He, Chenhao Li, Takahiro Miki, Clemens Schwarke, Chong Zhang, Xue Bin Peng and Marco Hutter.
+Source: https://wholebodylocomotion.github.io/
+Original video: https://wholebodylocomotion.github.io/static/clips/vaulting_01.mp4
+License: Creative Commons Attribution-ShareAlike 4.0 International.
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+Files: hero-scene-humanoid.mp4, hero-scene-humanoid-mobile.mp4
+Adaptations by Indem: Continuous source seconds3.0–8.625; normal crop removes title/speed overlays, proportionally resized, muted and converted to24fps. Small background laboratory name removed by optical frame tracking and conventional local inpainting of the dark door surface. Mobile ordinary following crop and dark fit preserve full body and actual vaulting motion. Real robot, physical motion and safety tether retained. No generated frames or motion. Adapted footage remains CC BY-SA 4.0, separately played; no endorsement implied.
+
+These adapted clips are distributed under the same CC BY-SA 4.0 license. No endorsement by the research authors, institutions or depicted equipment manufacturers is implied.

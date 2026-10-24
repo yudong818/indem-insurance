@@ -27,7 +27,7 @@ body:has(.physical-ai-approved) { background: #111; }
 .physical-ai-approved .insurancePartnerList span { min-width: 0; overflow-wrap: anywhere; }
 .physical-ai-approved .insurancePartnerLabel, .physical-ai-approved .insurancePartnerDetail { color: #a7a7a2; font-size: 12px; line-height: 1.5; }
 .physical-ai-approved .insurancePartnerName { color: #f7f7f5; font-size: 28px; font-weight: 450; line-height: 1.4; }
-.physical-ai-approved .insurancePartnerArcadia { font-family: Georgia, "Times New Roman", serif; font-size: 35px; line-height: 1.1; }
+.physical-ai-approved .insurancePartnerAgencyA { font-family: Georgia, "Times New Roman", serif; font-size: 35px; line-height: 1.1; }
 @media (max-width: 540px) {
   .physical-ai-approved .insurancePartnerList { grid-template-columns: 1fr; }
   .physical-ai-approved .insurancePartnerList li { padding: 20px 0; }

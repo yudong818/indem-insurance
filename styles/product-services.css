@@ -1,0 +1,50 @@
+#product {
+  height: auto;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 112px var(--gutter) 80px;
+}
+
+#product .scene-content {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+#product h2 {
+  font-size: 76px;
+  letter-spacing: 0;
+}
+
+#product .scene-description,
+#product .product-benefit,
+#product .product-mission {
+  max-width: 560px;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+#product .product-benefit {
+  margin-bottom: 18px;
+}
+
+#product .product-mission {
+  color: #f2de99;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 800px) {
+  #product h2 { font-size: 58px; }
+}
+
+@media (max-width: 560px) {
+  #product { padding-top: 104px; padding-bottom: 72px; }
+  #product h2 { font-size: 36px; }
+  #product .scene-label { font-size: 14px; }
+  #product .scene-description,
+  #product .product-benefit,
+  #product .product-mission { font-size: 17px; }
+}

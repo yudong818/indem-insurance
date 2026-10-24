@@ -1,0 +1,43 @@
+
+/* An open brand composition, aligned with the evidence columns below. */
+#data-edge{
+  background:radial-gradient(ellipse at 84% 27%,rgba(255,219,98,.055),transparent 48%),#070707;
+}
+#data-edge .edge-heading{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(320px,430px);
+  align-items:center;
+  gap:clamp(42px,5vw,80px);
+  width:100%;
+  max-width:1300px;
+  margin-inline:auto;
+}
+#data-edge .edge-copy{min-width:0}
+#data-edge .edge-brand{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+}
+#data-edge .edge-brand img{
+  display:block;
+  width:100%;
+  max-width:430px;
+  height:auto;
+}
+#data-edge .edge-columns{width:100%;max-width:1300px}
+@media(min-width:1101px){
+  #data-edge .edge-copy h2{font-size:clamp(58px,4.65vw,76px)}
+}
+@media(max-width:1100px){
+  #data-edge .edge-heading{grid-template-columns:minmax(0,1fr) minmax(280px,340px);gap:40px}
+}
+@media(max-width:900px){
+  #data-edge{background:radial-gradient(ellipse at 30% 45%,rgba(255,219,98,.045),transparent 60%),#070707}
+  #data-edge .edge-heading{grid-template-columns:minmax(0,1fr);gap:32px}
+  #data-edge .edge-brand{justify-content:flex-start}
+  #data-edge .edge-brand img{width:240px;max-width:100%}
+}
+
+#data-edge .edge-copy h2{text-wrap:balance}
+

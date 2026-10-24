@@ -1,0 +1,14 @@
+Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement (2026) — adapted hardware demonstration
+
+Authors: Minku Kim, Kuan-Chia Chen, Aayam Shrestha, Li Fuxin, Stefan Lee and Alan Fern.
+Affiliation: Collaborative Robotics and Intelligent Systems Institute, Oregon State University.
+Project: https://osudrl.github.io/Humanoid_Hanoi/
+Original film: https://osudrl.github.io/Humanoid_Hanoi/resources/hardware_per_skill/skill1.mp4
+License: Creative Commons Attribution-ShareAlike 4.0 International
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+Files: robotics-scene-handling.mp4, robotics-scene-handling.webp, robotics-scene-handling-mobile.mp4, robotics-scene-handling-mobile.webp
+
+Adaptations by Indem: Actual Digit V3 robot raises a cardboard box from near the floor and lowers it, at natural source speed. Continuous source seconds 4.5–10.125. Ordinary crop/fit places the intact robot and box in the desktop left half and portrait lower area; unused edge smoothly darkened into black for fixed overlay text. Printed chest brand mark removed by optical tracking and same-frame green-paint color reconstruction; detected portions of the cardboard-lid AprilTag research tracking graphic locally retouched by conventional inpainting; small non-brand research tracking marks may remain in some frames. Circular hardware connector, robot geometry, recorded physical movement, source lighting detail and visible safety tether retained. Background branded cartons fall outside the ordinary crop. Trimmed, resized, muted and converted to 24 fps; no mirror, generated motion, synthetic frames, looping or freeze padding. Poster images are ordinary frame extractions from 1.5 seconds of each adapted film. These separate adapted films and stills remain CC BY-SA 4.0. This is a real robot box-lifting demonstration, not walking transport; no Indem deployment, manufacturer/research affiliation or endorsement is implied.
+
+These adapted assets are separately distributed under CC BY-SA 4.0. The official project page licenses the website under CC BY-SA 4.0 in a paragraph separate from its template attribution, and the hardware source is directly embedded without a different media restriction. No endorsement is implied.
