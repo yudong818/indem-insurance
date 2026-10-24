@@ -1,4 +1,4 @@
-import {createPayload, sendInquiry, acceptedMessage, pendingMessage, deliveryMode} from '../form-delivery.js';
+import {createPayload, sendInquiry, acceptedMessage, pendingMessage, deliveryMode} from '../form-delivery.js?v=20261024-private';
 
 const form = document.querySelector('#consult-form');
 const submit = document.querySelector('#send-inquiry');

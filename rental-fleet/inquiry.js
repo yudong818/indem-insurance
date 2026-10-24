@@ -1,4 +1,4 @@
-import {createPayload, sendInquiry, acceptedMessage, pendingMessage, deliveryMode} from '../form-delivery.js';
+import {createPayload, sendInquiry, acceptedMessage, pendingMessage, deliveryMode} from '../form-delivery.js?v=20261024-private';
 
 const form = document.querySelector('#apply form');
 const button = form.querySelector('button[type="submit"]');

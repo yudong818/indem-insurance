@@ -1,5 +1,5 @@
-export const RECIPIENT = 'yudong@indeminsure.com';
-export const ENDPOINT = 'https://formsubmit.co/ajax/' + RECIPIENT;
+// Provider-issued public form alias; the receiving mailbox stays server-side.
+export const ENDPOINT = 'https://formsubmit.co/ajax/eb72c0395cf3ebe18bb2f8a3e9ce7c81';
 export const KINDS = {
   consultation: 'Physical AI consultation',
   rental: 'Rental fleet inquiry'
@@ -9,7 +9,7 @@ export function deliveryMode(source) {
   const url = new URL(source);
   if (['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname)) return 'test';
   if (url.protocol === 'https:' && ['indeminsure.com', 'www.indeminsure.com'].includes(url.hostname) && !url.port) return 'production';
-  throw new Error('This form is not enabled on this website. Contact yudong@indeminsure.com.');
+  throw new Error('This form is not enabled on this website. Call (607) 229-9686.');
 }
 
 export function createPayload(entries, kind, source, id = crypto.randomUUID()) {
@@ -67,16 +67,16 @@ export async function sendInquiry(data, request = fetch) {
 export function acceptedMessage(result) {
   if (/activat|confirm your email/i.test(result.message)) {
     if (result.mode === 'production') return `Your inquiry is not yet confirmed. Please call (607) 229-9686 and mention reference ${result.id}.`;
-    return `Email activation is required. Check ${RECIPIENT} before submitting again. Reference: ${result.id}`;
+    return `Email activation is required. Check the receiving inbox before submitting again. Reference: ${result.id}`;
   }
   if (result.mode === 'production') return `Your inquiry has been submitted for delivery to Indem. Our team will review it and contact you. Reference: ${result.id}`;
-  return `Accepted by the email delivery service for ${RECIPIENT}. Confirm receipt in the inbox. Reference: ${result.id}`;
+  return `Accepted by the email delivery service. Confirm receipt in the inbox. Reference: ${result.id}`;
 }
 
 export function pendingMessage(error, id, mode = 'test') {
   if (mode === 'production') return `We could not confirm delivery. To avoid a duplicate, please call (607) 229-9686 with reference ${id} before resubmitting.`;
   if (/activat|confirm your email/i.test(error?.message || '')) {
-    return `Email activation is required. Check ${RECIPIENT} for the activation message, then check whether this submission was released before trying again. Reference: ${id}`;
+    return `Email activation is required. Check the receiving inbox for the activation message, then check whether this submission was released before trying again. Reference: ${id}`;
   }
   return `Delivery is not confirmed. Check the inbox and spam before retrying to avoid duplicates. Reference: ${id}`;
 }
