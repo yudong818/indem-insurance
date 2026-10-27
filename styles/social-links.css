@@ -12,10 +12,9 @@
   justify-content: center;
   min-height: 56px;
   padding: 3px 0 8px;
-  border-bottom: 1px solid #ffffff70;
   color: var(--white);
   line-height: 1.5;
-  transition: color .2s, border-color .2s;
+  transition: color .2s;
 }
 
 .indem-socials strong {
@@ -31,7 +30,6 @@
 .indem-socials a:hover,
 .indem-socials a:focus-visible {
   color: var(--gold);
-  border-color: var(--gold);
 }
 
 .hero-socials {
