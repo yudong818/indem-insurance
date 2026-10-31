@@ -1,25 +1,46 @@
-/* Keep the expanded homepage title readable without changing other scenes. */
+/* Keep the expanded introduction in document flow on short screens. */
+.hero {
+  height: auto;
+  min-height: max(690px, calc(100svh - 64px));
+  display: flex;
+  align-items: center;
+  padding: 152px var(--gutter) 100px;
+}
 .hero .scene-content {
-  bottom: 18%;
+  position: relative;
+  left: auto;
+  bottom: auto;
+  width: 100%;
+  max-width: 800px;
 }
-
-.hero h1 {
-  font-size: clamp(52px, 5.5vw, 88px);
-  line-height: 1.05;
+.hero h1 { font-size: 72px; line-height: 1.06; letter-spacing: 0; }
+.hero h1 span { display: block; }
+.hero .scene-description {
+  max-width: 660px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 24px 0;
 }
-
-.hero h1 span {
-  display: block;
+.financing-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.financing-actions .button { min-width: 0; }
+.financing-actions .financing-primary { background: #fff; color: #111; }
+.financing-actions .financing-primary:hover { background: var(--gold); }
+.hero .hero-socials { margin-top: 22px; }
+@media (max-width: 800px) {
+  .hero { padding-top: 136px; }
+  .hero h1 { font-size: 54px; }
 }
-
 @media (max-width: 560px) {
-  .hero h1 {
-    font-size: clamp(32px, 9.6vw, 52px);
-  }
+  .hero { min-height: calc(100svh - 48px); padding: 124px var(--gutter) 76px; }
+  .hero h1 { font-size: 38px; line-height: 1.1; }
+  .hero .scene-label { font-size: 14px; margin-bottom: 14px; }
+  .hero .scene-description { font-size: 16px; margin: 20px 0; }
+  .financing-actions { display: grid; grid-template-columns: 1fr; max-width: 320px; }
+  .financing-actions .button { min-height: 48px; padding: 12px 18px; }
 }
-
-@media (min-width: 801px) and (max-height: 780px) {
-  .hero h1 {
-    font-size: clamp(50px, 5.2vw, 70px);
-  }
+@media (max-width: 360px) {
+  .hero h1 { font-size: 36px; }
+  .hero .scene-description { font-size: 15px; }
+  .hero .hero-socials { display: none; }
+  .site-header .header-contact { display: none; }
 }
