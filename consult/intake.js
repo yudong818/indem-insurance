@@ -6,9 +6,10 @@ const status = document.querySelector('#delivery-status');
 const done = document.querySelector('#complete');
 const mode = deliveryMode(location.href);
 const initialArea = new URLSearchParams(location.search).get('area');
+const initialNeed = new URLSearchParams(location.search).get('need');
 const fields = [
   ['name', 'Name'], ['email', 'email'], ['company', 'Company'], ['phone', 'Phone'],
-  ['area', 'System'], ['states', 'Locations'], ['timing', 'Timing'],
+  ['need', 'Inquiry type'], ['area', 'System'], ['states', 'Locations'], ['timing', 'Timing'],
   ['referral', 'How did you hear about us?'], ['use', 'Intended use and help needed']
 ];
 let attempted = false;
@@ -16,6 +17,9 @@ let attempted = false;
 function restoreArea() {
   if ([...form.elements.area.options].some(option => option.value === initialArea)) {
     form.elements.area.value = initialArea;
+  }
+  if ([...form.elements.need.options].some(option => option.value === initialNeed)) {
+    form.elements.need.value = initialNeed;
   }
 }
 function inquiryEntries() {
