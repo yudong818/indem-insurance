@@ -1,17 +1,16 @@
-// Preserve historic rental acquisition links when the company homepage changes.
+// Keep acquisition links from older emails working after the redesign.
 const legacyRentalHashes = new Set(['#apply', '#quote', '#rental-quote', '#perspective', '#approach', '#workflow', '#data-advantage', '#fleet-records', '#account-continuity', '#coverage', '#market', '#fit']);
-function routeLegacyRental() {
-  const home = ['/', '/index.html'].includes(location.pathname);
-  if (home && location.hash === '#people') {
+function routeLegacyHash() {
+  if (!['/', '/index.html'].includes(location.pathname)) return;
+  if (location.hash === '#people') {
     location.replace('/' + location.search + '#contact');
-    return;
+  } else if (legacyRentalHashes.has(location.hash)) {
+    const hash = ['#quote', '#rental-quote'].includes(location.hash) ? '#apply' : location.hash;
+    location.replace('/rental-fleet/' + location.search + hash);
   }
-  if (!home || !legacyRentalHashes.has(location.hash)) return;
-  const hash = ['#quote', '#rental-quote'].includes(location.hash) ? '#apply' : location.hash;
-  location.replace('/rental-fleet/' + location.search + hash);
 }
-routeLegacyRental();
-window.addEventListener('hashchange', routeLegacyRental);
+routeLegacyHash();
+window.addEventListener('hashchange', routeLegacyHash);
 const campaignKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'];
 exportToLinks();
 function exportToLinks() {
